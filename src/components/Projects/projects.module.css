@@ -1,0 +1,33 @@
+.projectHeader {
+  font-size: var(--step-3);
+  font-weight: 100;
+  text-transform: uppercase;
+  font-family: monospace;
+  background-color: var(--pink);
+  color: white;
+  height: 10vh;
+}
+
+.show {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  transform: translateY(0);
+}
+
+.hide {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  transform: translateY(30px);
+}
+
+.show1 {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  transform: translateX(0);
+}
+
+.hide1 {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  transform: translateX(-30px);
+}

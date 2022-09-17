@@ -1,0 +1,217 @@
+.body {
+  overflow: hidden;
+  position: relative;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--pink);
+}
+/* 
+.welcome {
+  z-index: 1;
+  margin-top: 5vh;
+  width: 100%;
+  font-size: var(--step-3);
+
+  color: transparent;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  color: rgb(184, 52, 52);
+  transition: 0.2s;
+  margin-left: var(--space-xs-s);
+  margin-bottom: 10vh; */
+/* } */
+
+/* .welcome:hover {
+  text-underline-position: above;
+  transform: translate3d(10px, -5px, 2px);
+} */
+
+/* .aboutTitle {
+  color: rgb(255, 150, 234);
+
+  margin-bottom: var(--space-xs-s);
+  font-size: var(--step-2);
+  animation: changeFontFamily 0.5s infinite;
+  height: 40px;
+  animation-play-state: paused;
+}
+.aboutTitle:hover {
+  animation-play-state: running;
+} */
+
+.about {
+  width: 100%;
+  margin-top: 45vh;
+  font-size: var(--step-3);
+  font-weight: 700;
+
+  color: transparent;
+
+  color: white;
+  transition: 0.2s;
+
+  max-width: 90vw;
+}
+
+/* .highlightYello {
+  color: yellow;
+} */
+
+/* .highlightResponsive {
+  color: rgb(184, 52, 52);
+  transition: 0.3;
+}
+.highlightResponsive:hover {
+  text-transform: uppercase;
+}
+.highlightBackground {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  background-color: aliceblue;
+} */
+
+.aboutText {
+  font-size: var(--step-10--);
+  text-align: center;
+}
+
+.highlightPretty {
+  color: pink;
+}
+
+.highlightPretty:hover {
+  background-color: #6329c1;
+}
+
+.highlightPrettyTwo {
+  color: #eca5f3;
+}
+.highlightPrettyTwo:hover {
+  background-color: #5a00ea;
+}
+/* @keyframes changeFontFamily {
+  0% {
+    font-family: "Lato";
+  }
+  50% {
+    font-family: "Roboto";
+  }
+  100% {
+    font-family: "Lato";
+  }
+} */
+/* .pinkPiller {
+  height: 120vh;
+  width: 30vw;
+  position: relative;
+  top: -50vh;
+  opacity: 0.5;
+  transition: 0.3s ease-in-out;
+  transform: translateX(100vw);
+  background-color: #6b1a72;
+  opacity: 0;
+  background-color: #ffffff;
+
+  background-image: repeating-linear-gradient(
+      45deg,
+      #000000 25%,
+      transparent 25%,
+      transparent 75%,
+      #000000 75%,
+      #000000
+    ),
+    repeating-linear-gradient(
+      45deg,
+      #000000 25%,
+      #ffffff 25%,
+      #ffffff 75%,
+      #000000 75%,
+      #000000
+    );
+  background-position: 0 0, 37px 37px;
+  background-size: 74px 74px;
+  z-index: 30;
+} */
+/* 
+.pinkPillerMove {
+  transition: 0.6s ease-in-out;
+  height: 120vh;
+  width: 150vw;
+  background-color: #6b1a72;
+  opacity: 0.8;
+  background-color: #ffffff;
+  opacity: 0.8;
+  background-image: repeating-linear-gradient(
+      45deg,
+      #000000 25%,
+      transparent 25%,
+      transparent 75%,
+      #000000 75%,
+      #000000
+    ),
+    repeating-linear-gradient(
+      45deg,
+      #000000 25%,
+      #ffffff 25%,
+      #ffffff 75%,
+      #000000 75%,
+      #000000
+    );
+  background-position: 0 0, 37px 37px;
+  background-size: 74px 74px;
+
+  position: relative;
+  top: -50vh;
+  opacity: 1;
+
+  transform: translateX();
+  z-index: 30;
+} */
+
+.show {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.hide {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.show2 {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.hide2 {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.blob {
+  animation: rotate 60s infinite linear;
+  position: absolute;
+  z-index: 1;
+
+  mix-blend-mode: difference;
+  top: 100px;
+  pointer-events: none;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* @media screen and (max-width: 768px) {
+  .aboutText {
+    font-size: var(--step-7);
+  }
+} */

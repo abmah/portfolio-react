@@ -1,0 +1,10 @@
+.scroll {
+  height: 100vh;
+}
+
+.section {
+  background-color: red;
+  height: 500px;
+  scroll-snap-align: start;
+  width: 500px;
+}

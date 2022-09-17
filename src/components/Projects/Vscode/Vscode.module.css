@@ -1,0 +1,107 @@
+.Project {
+  overflow: hidden;
+  font-family: monospace;
+  background-color: var(--pink);
+}
+
+.imagesContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.imagesContainer2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dizcordImage1 {
+  max-width: 500px;
+  width: 95vw;
+  border-radius: 16px;
+}
+.dizcordImage2 {
+  max-width: 600px;
+  width: 85vw;
+  border-radius: 16px;
+}
+
+.dizcordImage1:hover .dizcordButton1 {
+  display: block;
+  margin-right: 20px;
+}
+
+.dizcordButton1 {
+  position: absolute;
+  right: 90px;
+  bottom: 30px;
+  display: none;
+  margin-right: 300px;
+  font-size: large;
+}
+
+.dizcordButton1:hover {
+  text-decoration: underline;
+}
+.DizcordParagraph {
+  font-size: var(--step--1);
+  text-align: center;
+  max-width: 600px;
+}
+.DizcordParagraph2 {
+  font-size: var(--step--2);
+  text-align: center;
+  max-width: 600px;
+}
+
+.Dizcordlinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-size: var(--step-0);
+  color: pink;
+  text-align: center;
+}
+.dizcordlink:hover {
+  text-decoration: underline;
+}
+
+.githubLogo {
+  animation: jumbing 0.4s infinite ease-in-out;
+  animation-play-state: paused;
+}
+.dizcordlink:hover .githubLogo {
+  animation-play-state: running;
+}
+
+@keyframes jumbing {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.partSection {
+  background-color: pink;
+  height: 10px;
+}
+
+.show2 {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  transform: translateX(0);
+}
+
+.hide2 {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  transform: translateX(-30px);
+}

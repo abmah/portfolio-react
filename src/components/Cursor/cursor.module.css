@@ -1,0 +1,41 @@
+.mainCursor {
+  height: 15px;
+  width: 15px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  position: fixed;
+
+  z-index: 1000;
+  pointer-events: none;
+  mix-blend-mode: difference;
+}
+
+.secondaryCursor {
+  height: 60px;
+  width: 60px;
+
+  top: -2px;
+  border-radius: 50%;
+  border: 3px solid white;
+  position: fixed;
+  z-index: 10;
+
+  pointer-events: none;
+  mix-blend-mode: difference;
+}
+
+@media screen and (max-width: 608px) {
+  .mainCursor {
+    display: none;
+  }
+  .secondaryCursor {
+    display: none;
+  }
+}
+.cursor-background {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  position: relative;
+}

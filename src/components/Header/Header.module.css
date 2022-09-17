@@ -1,0 +1,177 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  top: 0;
+  z-index: 100;
+
+  transition: all 0.2s cubic-bezier(0.45, 0.05, 0.22, 1.3);
+  /* background-color: rgb(63, 63, 63); */
+  width: 100%;
+  background-color: var(--pink);
+  height: 100vh;
+}
+
+.HeaderNameContainer {
+  margin-left: var(--space-s);
+  animation: fadeIn 0.3s ease-in forwards;
+  font-size: var(--step-10);
+  /* transition: all 0.2s ease-in-out; */
+  font-weight: 900;
+  text-transform: uppercase;
+  display: flex;
+  position: relative;
+}
+.HeaderNameContainerSmall {
+  margin-left: var(--space-s-3xl);
+  animation: fadeIn 0.3s ease-in forwards;
+  font-size: var(--step-2);
+  /* transition: all 0.2s ease-in-out; */
+  font-weight: 900;
+  text-transform: uppercase;
+  display: flex;
+  position: relative;
+}
+
+.HeaderName {
+  animation: fadein 4s ease;
+  transition: all 0.2s cubic-bezier(0.1, 0.05, 0.62, 1.3);
+  transition-delay: 0.1s;
+  color: var(--font-pink);
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.HeaderName:hover {
+  font-weight: 100;
+  color: white;
+}
+
+.HeaderMenu {
+  margin-right: var(--space-s-3xl);
+  margin-top: 0.5em;
+  transition: all 0.2s cubic-bezier(0.45, 0.05, 0.22, 1.3);
+
+  font-size: var(--step--1);
+}
+
+.HeaderMenuSmall {
+  margin-right: var(--space-s-3xl);
+
+  font-size: var(--step--2);
+}
+
+.MenuList {
+  list-style: none;
+  font-weight: bolder;
+  transition: all 0.2s cubic-bezier(0.45, 0.05, 0.22, 1.3);
+  text-transform: uppercase;
+  animation: fadeIn 0.3s ease-in forwards;
+}
+
+.MenuList > li {
+  margin-bottom: 2px;
+
+  transition: all 0.1s ease-in-out;
+  box-sizing: border-box;
+  margin-top: 0px;
+
+  padding: 5px;
+}
+
+.MenuList > li:hover {
+  color: var(--text-color--accent);
+  /* background-color: rgb(87, 51, 51); */
+  transform: translateY(-2px);
+  /* box-sizing: border-box; */
+  /* border-bottom: 3px solid var(--text-color--accent); */
+}
+
+@media screen and (min-width: 900px) {
+  .MenuList {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-s-3xl);
+  }
+  .MenuList > li {
+    margin-top: 25px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+.HeaderTitle {
+  margin-left: var(--space-s-3xl);
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+  box-sizing: content-box;
+  width: max-content;
+  animation: fadeIn 0.3s ease-in forwards;
+  background-image: linear-gradient(
+    90deg,
+    rgb(235, 126, 0) 0%,
+    rgb(228, 249, 0) 30%,
+    rgb(255, 217, 0) 100%
+  );
+  background-clip: text;
+  color: transparent;
+
+  font-weight: 900;
+}
+
+.HeaderTitle:hover {
+  transform: translateX(0.5rem);
+}
+.HeaderTitle:active {
+  transform: translateX(1rem);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.dot {
+  background-image: linear-gradient(
+    90deg,
+    rgb(255, 251, 136) 0%,
+    rgb(234, 255, 0) 30%,
+    rgb(226, 255, 171) 100%
+  );
+  background-clip: text;
+  color: transparent;
+  animation: bounce 1s infinite;
+  animation-play-state: paused;
+}
+.dot:hover {
+  animation-play-state: running;
+  font-weight: 900;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,192 @@
+.skills {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-transform: uppercase;
+  margin-top: 200px;
+  background-size: 45.3px 85.2px;
+  background-size: 113.26px 213.01px;
+  font-family: "Lato";
+  height: 900px;
+  /* background-color: var(--blue); */
+  scroll-snap-align: start;
+}
+
+/* @media screen and (max-width: 900px) {
+  .skills {
+    background: #85579c;
+  }
+} */
+.skillsTitle {
+  color: white;
+
+  font-size: var(--step-4);
+  margin-left: var(--space-xs-s);
+  text-transform: uppercase;
+  transition: 0.8s;
+  opacity: 1;
+}
+.skillSubTitle {
+  font-size: var(--step-0);
+  color: pink;
+}
+
+.skillsTitleAfter {
+  opacity: 0;
+  font-size: var(--step-4);
+  margin-left: var(--space-xs-l);
+  transition: 0.2s;
+}
+.cardName {
+}
+.skillCard {
+  margin-top: var(--space-m);
+
+  height: 270px;
+  display: inline-block;
+  width: 100%;
+  font-size: var(--step-2);
+  border: 2px pink solid;
+  border-bottom: none;
+  max-width: 300px;
+  transition: 0.2s ease-in-out;
+  margin-bottom: 10px;
+}
+/* .skillCardHidden {
+  margin-top: var(--space-m);
+
+  display: inline-block;
+  width: 80%;
+  font-size: var(--step-2);
+  border: 2px pink solid;
+  border-bottom: none;
+  max-width: 300px;
+  transition: 0.2s ease-in-out;
+  opacity: 0;
+} */
+.skillCardTwo {
+  display: inline-block;
+  width: 100%;
+  font-size: var(--step-2);
+  border: 2px pink solid;
+  border-bottom: none;
+  max-width: 300px;
+  transition: 0.2s ease-in-out;
+  padding-bottom: 20px;
+}
+/* .skillCardTwoHidden {
+  height: 35vh;
+  display: inline-block;
+  width: 80%;
+  font-size: var(--step-2);
+  border: 2px pink solid;
+  border-bottom: none;
+  max-width: 300px;
+  transition: 0.2s ease-in-out;
+  opacity: 0;
+} */
+
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* animation: pop 1s infinite alternate; */
+}
+/* @keyframes pop {
+  0% {
+    transform: scale(0.98);
+  }
+  100% {
+    transform: scale(1);
+  }
+} */
+
+/* .cardsContainerHidden {
+  transition: all 0.1 ease-in-out;
+  flex-direction: column;
+  opacity: 0;
+} */
+
+@media screen and (min-width: 720px) {
+  .cardsContainer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .skillCardTwo {
+    margin-top: 200px;
+  }
+}
+
+.skillCard:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skillCard:hover .skillCardTitle {
+  opacity: 0.05;
+}
+.skillCard:hover .cardName {
+  opacity: 0.05;
+}
+
+.skillCardTitle {
+  color: white;
+  font-size: var(--step-1);
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-family: "Lato";
+}
+
+.middle {
+  transition: 0.5s ease;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+}
+
+.skillCard:hover .middle {
+  opacity: 1;
+  display: block;
+}
+
+.text {
+  background-color: #e384e0;
+  font-family: monospace;
+  color: rgb(255, 255, 255);
+  font-size: var(--step--2);
+  position: relative;
+  height: 150px;
+  width: 200px;
+}
+
+.show {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  transform: translateX(0);
+}
+
+.hide {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  transform: translateX(30px);
+}
+
+.show2 {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  transform: translateX(0);
+}
+
+.hide2 {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  transform: translateX(-30px);
+}
