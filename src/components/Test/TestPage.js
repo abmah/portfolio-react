@@ -20,7 +20,7 @@ export default function TestPage() {
 
         pin: true,
         scrub: true,
-        markers: true,
+        markers: false,
       },
     });
 
