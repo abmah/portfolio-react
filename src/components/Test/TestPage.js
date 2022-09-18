@@ -35,14 +35,14 @@ export default function TestPage() {
         markers: true,
         scrub: true,
         toggleClass: "active",
-        onEnter: () => console.log("enter"),
       },
     });
     gsap.to(".box1", {
       duration: 1,
       opacity: 1,
       // make it move to the right
-      x: 100,
+      x: 300,
+      y: 200,
 
       yoyo: true,
       scrollTrigger: {
@@ -54,13 +54,12 @@ export default function TestPage() {
         scrub: true,
 
         toggleClass: "active",
-        onEnter: () => console.log("enter"),
       },
     });
     gsap.to(".box2", {
-      duration: 1,
+      duration: 4,
       opacity: 1,
-
+      x: 500,
       scrollTrigger: {
         containerAnimation: scrollTween,
         trigger: ".box2",
@@ -69,7 +68,6 @@ export default function TestPage() {
         markers: true,
         scrub: true,
         toggleClass: "active",
-        onEnter: () => console.log("enter"),
       },
     });
 
@@ -84,26 +82,20 @@ export default function TestPage() {
         <div className="panel">
           <div className={styles.firstBlock}>
             <div className="box0">FRONTEND DEVELOPER</div>
-            <div className="about-text0">
-              I like to make pretty looking websites
-            </div>
+            <div className="about-text0"></div>
           </div>
         </div>
         <div className="space"></div>
         <div className="panel">
           <div className={styles.firstBlock}>
             <div className="box1">BACKEND DEVELOPER</div>
-            <div className="about-text1">
-              I like to make pretty looking websites
-            </div>
+            <div className="about-text1"></div>
           </div>
         </div>
         <div className="panel">
           <div className={styles.firstBlock}>
             <div className="box2">DESIGNER</div>
-            <div className="about-text2">
-              I like to make pretty looking websites
-            </div>
+            <div className="about-text2"></div>
           </div>
         </div>
       </div>

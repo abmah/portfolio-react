@@ -6,7 +6,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
   /* background: linear-gradient(90deg, #4c3a69 75%, #001854 25%); */
-  cursor: default;
+  cursor: none;
   color: #ff95a7;
   background-color: black;
   position: relative;

@@ -15,11 +15,12 @@
 }
 .panel {
   width: 33%;
+  background-color: white;
   height: 100vh;
 }
 
 .box0 {
-  font-size: var(--step-6);
+  font-size: var(--step-7);
   background-color: rgb(152, 152, 152);
   color: pink;
   font-family: lato;
@@ -28,7 +29,7 @@
 .box1 {
   font-size: var(--step-6);
   width: fit-content;
-
+  margin-right: 200px;
   color: pink;
   font-family: lato;
   background-color: azure;
