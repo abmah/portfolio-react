@@ -32,7 +32,7 @@ export default function TestPage() {
         trigger: ".box0",
         start: "left center",
         toggleActions: "play none none reverse",
-        markers: true,
+        markers: false,
         scrub: true,
         toggleClass: "active",
       },
@@ -50,7 +50,7 @@ export default function TestPage() {
         trigger: ".box1",
         start: "left center",
         // toggleActions: "play none none reverse",
-        markers: true,
+        markers: false,
         scrub: true,
 
         toggleClass: "active",
@@ -65,7 +65,7 @@ export default function TestPage() {
         trigger: ".box2",
         start: "left center",
         toggleActions: "play none none reverse",
-        markers: true,
+        markers: false,
         scrub: true,
         toggleClass: "active",
       },
@@ -73,7 +73,7 @@ export default function TestPage() {
 
     ScrollTrigger.refresh();
   }, []);
-
+  //
   return (
     <div className="scroll">
       <div className={styles.introduction}>IM A</div>
