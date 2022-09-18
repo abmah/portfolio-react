@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import styles from "./Test.module.css";
 import gsap from "gsap";
-import { Tween } from "react-gsap";
-import { ScrollTrigger, scrollTween } from "gsap/dist/ScrollTrigger";
+
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import "./Test.css";
 export default function TestPage() {
   gsap.registerPlugin(ScrollTrigger);

@@ -22,7 +22,7 @@
 
 .box0 {
   font-size: var(--step-9);
-  background-color: rgb(71, 152, 109);
+  background-color: rgb(220, 118, 0);
   color: var(--font-pink);
   font-family: lato;
   width: fit-content;
@@ -66,10 +66,14 @@
   .box0,
   .box1,
   .box2 {
-    font-size: var(--step-4);
+    font-size: var(--step-5);
   }
 }
 
 .space {
   width: 20px;
+}
+
+.introduction {
+  font-size: var(--step-7);
 }
