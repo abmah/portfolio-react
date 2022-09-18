@@ -1,30 +1,19 @@
 import styles from "./Header.module.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function PageHeader() {
   const [shouldHeaderMinimize, setShouldHeaderMinimize] = useState(false);
-  // useEffect(() => {
-  //   window.onscroll = function () {
-  //     scrollFunction();
-  //   };
-  // }, []);
 
-  // function scrollFunction() {
-  //   if (document.documentElement.scrollTop > 290) {
-  //     // activate
-
-  //     setShouldHeaderMinimize(true);
-  //   }
-  //   if (document.documentElement.scrollTop < 10) {
-  //     setShouldHeaderMinimize(false);
-  //   }
-  // }
   function scrollToProjects(pixles) {
-    // make it so when this function runs it scrolls by 2000 pixels smoothly to the projects section
     window.scrollTo({
       top: pixles,
       behavior: "smooth",
     });
+  }
+  const [LightMode, setLightMode] = useState(false);
+  function LightDarkMode() {
+    setLightMode(!LightMode);
+    console.log(LightMode);
   }
 
   return (
@@ -40,7 +29,12 @@ export default function PageHeader() {
           <span className={styles.HeaderName}>A</span>
           <span className={styles.HeaderName}>.</span>
           <span className={styles.HeaderName}>B</span>
-          <span className={`${styles.HeaderName} ${styles.dot}`}>.</span>
+          <span
+            onClick={LightDarkMode}
+            className={`${styles.HeaderName} ${styles.dot}`}
+          >
+            .
+          </span>
         </div>
         {/* <div className={styles.HeaderTitle}>full-stack developer</div> */}
       </div>
@@ -50,10 +44,27 @@ export default function PageHeader() {
         }
       >
         <ul className={styles.MenuList}>
-          <li onClick={() => scrollToProjects(1610)}>projects</li>
-          <li onClick={() => scrollToProjects(3610)}>contact</li>
+          <li onClick={() => scrollToProjects(3810)}>projects</li>
+          <li onClick={() => scrollToProjects(5010)}>contact</li>
         </ul>
       </div>
     </div>
   );
 }
+
+// useEffect(() => {
+//   window.onscroll = function () {
+//     scrollFunction();
+//   };
+// }, []);
+
+// function scrollFunction() {
+//   if (document.documentElement.scrollTop > 290) {
+//     // activate
+
+//     setShouldHeaderMinimize(true);
+//   }
+//   if (document.documentElement.scrollTop < 10) {
+//     setShouldHeaderMinimize(false);
+//   }
+// }

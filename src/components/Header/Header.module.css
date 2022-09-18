@@ -15,17 +15,7 @@
 .HeaderNameContainer {
   margin-left: var(--space-s);
   animation: fadeIn 0.3s ease-in forwards;
-  font-size: var(--step-10);
-  /* transition: all 0.2s ease-in-out; */
-  font-weight: 900;
-  text-transform: uppercase;
-  display: flex;
-  position: relative;
-}
-.HeaderNameContainerSmall {
-  margin-left: var(--space-s-3xl);
-  animation: fadeIn 0.3s ease-in forwards;
-  font-size: var(--step-2);
+  font-size: var(--step-10-);
   /* transition: all 0.2s ease-in-out; */
   font-weight: 900;
   text-transform: uppercase;
@@ -36,7 +26,6 @@
 .HeaderName {
   animation: fadein 4s ease;
   transition: all 0.2s cubic-bezier(0.1, 0.05, 0.62, 1.3);
-  transition-delay: 0.1s;
   color: var(--font-pink);
 }
 
@@ -57,7 +46,7 @@
 
 .HeaderMenu {
   margin-right: var(--space-s-3xl);
-  margin-top: 0.5em;
+  margin-top: 4.5em;
   transition: all 0.2s cubic-bezier(0.45, 0.05, 0.22, 1.3);
 
   font-size: var(--step--1);
@@ -95,7 +84,7 @@
   /* border-bottom: 3px solid var(--text-color--accent); */
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1000px) {
   .MenuList {
     display: flex;
     flex-direction: row;
@@ -105,7 +94,7 @@
     margin-top: 25px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .header {
     flex-direction: column;
     justify-content: flex-start;

@@ -10,8 +10,9 @@ function App() {
   return (
     <div className="App">
       <Cursor />
+
       <PageHeader />
-      <Body />
+      {/* <Body /> */}
       <Test />
       <SkillSet />
       <Projects />

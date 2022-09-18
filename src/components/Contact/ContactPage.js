@@ -158,7 +158,9 @@ export default function Contact() {
               {sent ? <div>sent!</div> : ""}
               {wentWorng ? <div>something went wrong!</div> : ""}
 
-              <button disabled={sending}>Send!</button>
+              <button className={styles.sendButton} disabled={sending}>
+                Send!
+              </button>
             </form>
           </div>
         </div>
