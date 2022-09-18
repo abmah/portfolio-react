@@ -41,7 +41,7 @@ export default function TestPage() {
       duration: 1,
       opacity: 1,
       // make it move to the right
-      x: 300,
+      x: 100,
       y: 200,
 
       yoyo: true,
@@ -59,7 +59,7 @@ export default function TestPage() {
     gsap.to(".box2", {
       duration: 4,
       opacity: 1,
-      x: 500,
+      rotate: 20,
       scrollTrigger: {
         containerAnimation: scrollTween,
         trigger: ".box2",
@@ -86,6 +86,7 @@ export default function TestPage() {
           </div>
         </div>
         <div className="space"></div>
+
         <div className="panel">
           <div className={styles.firstBlock}>
             <div className="box1">BACKEND DEVELOPER</div>

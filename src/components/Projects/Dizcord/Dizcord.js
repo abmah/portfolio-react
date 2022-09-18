@@ -1,5 +1,5 @@
 import styles from "./Dizcord.module.css";
-
+import DizcordImage from "../../../images/dizcord.gif";
 // @ts-ignore
 import Tilt from "react-vanilla-tilt";
 import { DiGithubBadge } from "react-icons/di";
@@ -57,10 +57,7 @@ export default function Dizcord() {
             className={styles.dizcordImage1}
           >
             <div>
-              <img
-                className={styles.dizcordImage1}
-                src="https://raw.githubusercontent.com/abmah/portfolio/main/images/dizcord.gif"
-              />
+              <img className={styles.dizcordImage1} src={DizcordImage} />
               <div className={styles.dizcordButton1}>!!</div>
             </div>
           </Tilt>

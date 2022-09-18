@@ -1,11 +1,11 @@
 .intro {
   font-size: var(--step-6);
-  color: white;
+  color: var(--text-color);
 }
 
 .introduction {
   font-size: var(--step-7);
-  color: white;
+  color: var(--text-color);
   font-family: lato;
 }
 .firstBlock {
@@ -22,7 +22,7 @@
 }
 
 .subtitle {
-  color: white;
+  color: var(--text-color);
   font-family: lato;
   margin-top: 5vh;
   margin-left: 30vw;

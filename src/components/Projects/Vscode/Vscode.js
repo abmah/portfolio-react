@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Vscode.module.css";
+import VscodeImage from "../../../images/vscode.gif";
 // @ts-ignore
 import Tilt from "react-vanilla-tilt";
 import { DiGithubBadge } from "react-icons/di";
@@ -59,10 +60,7 @@ export default function Vscode() {
             className={styles.dizcordImage2}
           >
             <div>
-              <img
-                className={styles.dizcordImage2}
-                src="https://raw.githubusercontent.com/abmah/portfolio/main/images/vscode.gif"
-              />
+              <img className={styles.dizcordImage2} src={VscodeImage} />
               <div className={styles.dizcordButton1}>!!</div>
             </div>
           </Tilt>
