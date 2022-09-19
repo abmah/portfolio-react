@@ -116,6 +116,7 @@ export default function Contact() {
     let color = getComputedStyle(document.documentElement).getPropertyValue(
       "--pink"
     );
+    console.log(color);
     if (color.split("#").join("").toString() === "black") {
       return "pink";
     } else {
