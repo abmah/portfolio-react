@@ -146,11 +146,15 @@
   background-clip: text;
   color: transparent;
   animation: bounce 1s infinite;
-  animation-play-state: paused;
+
+  user-select: none;
 }
 .dot:hover {
   animation-play-state: running;
   font-weight: 900;
+}
+.dot:active {
+  font-weight: 100;
 }
 
 @keyframes bounce {

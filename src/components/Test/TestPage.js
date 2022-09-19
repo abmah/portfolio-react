@@ -11,7 +11,7 @@ export default function TestPage() {
     let sections = gsap.utils.toArray(".panel");
 
     let scrollTween = gsap.to(sections, {
-      xPercent: -100 * (sections.length - 1),
+      xPercent: -70 * (sections.length - 1),
       startAt: { xPercent: 0 },
       ease: "ease",
       scrollTrigger: {
@@ -27,6 +27,8 @@ export default function TestPage() {
     gsap.to(".box0", {
       duration: 1,
       opacity: 1,
+      y: 0,
+      x: 30,
       scrollTrigger: {
         containerAnimation: scrollTween,
         trigger: ".box0",
@@ -41,8 +43,7 @@ export default function TestPage() {
       duration: 1,
       opacity: 1,
       // make it move to the right
-      x: 100,
-      y: 200,
+      x: 30,
 
       yoyo: true,
       scrollTrigger: {
@@ -59,7 +60,8 @@ export default function TestPage() {
     gsap.to(".box2", {
       duration: 4,
       opacity: 1,
-      rotate: 20,
+      x: 30,
+      rotate: 50,
       scrollTrigger: {
         containerAnimation: scrollTween,
         trigger: ".box2",
@@ -96,6 +98,12 @@ export default function TestPage() {
         <div className="panel">
           <div className={styles.firstBlock}>
             <div className="box2">DESIGNER</div>
+            <div className="about-text2"></div>
+          </div>
+        </div>
+        <div className="panel">
+          <div className={styles.firstBlock}>
+            <div className="box3"></div>
             <div className="about-text2"></div>
           </div>
         </div>

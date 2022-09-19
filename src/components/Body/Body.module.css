@@ -1,14 +1,10 @@
-.body {
+.bodypage {
   overflow: hidden;
   position: relative;
-  height: 20vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--pink);
-  margin-bottom: 50vh;
-}
-.about {
-  font-size: var(--step-7);
-  font-weight: 800;
+  color: white;
 }

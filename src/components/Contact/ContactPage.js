@@ -111,6 +111,18 @@ export default function Contact() {
   //   return () => {};
   // }, []);
 
+  // get css variables color
+  const getCssVariable = () => {
+    let color = getComputedStyle(document.documentElement).getPropertyValue(
+      "--pink"
+    );
+    if (color.split("#").join("").toString() === "black") {
+      return "pink";
+    } else {
+      return "purple";
+    }
+  };
+
   return (
     /*@ts-ignore */
     <div className={styles.contactpage}>
@@ -172,7 +184,7 @@ export default function Contact() {
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          fill="pink"
+          fill={`${getCssVariable()}`}
           d="M44.3,-66.9C58.5,-68.5,71.9,-58.8,74.1,-45.8C76.3,-32.8,67.4,-16.4,60.3,-4.1C53.3,8.3,48.1,16.5,43.9,26.2C39.8,35.8,36.6,46.9,29.5,56.2C22.3,65.4,11.2,72.9,-2,76.3C-15.1,79.8,-30.2,79.2,-36.4,69.4C-42.6,59.5,-39.9,40.5,-47.8,27.4C-55.7,14.3,-74.3,7.2,-75.8,-0.9C-77.3,-8.9,-61.8,-17.8,-49,-22.5C-36.2,-27.2,-26.2,-27.6,-18.5,-29.8C-10.8,-32,-5.4,-35.9,4.8,-44.2C15,-52.6,30.1,-65.3,44.3,-66.9Z"
           transform="translate(100 100)"
         />

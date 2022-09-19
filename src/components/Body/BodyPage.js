@@ -4,42 +4,31 @@ import { useInView } from "react-intersection-observer";
 import styles from "./Body.module.css";
 import gsap from "gsap";
 import { useLayoutEffect } from "react";
+import "./body.css";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 export default function Body() {
-  const { ref: cardsReftwo, inView: CardsinViewTwo } = useInView({});
+  // const { ref: cardsReftwo, inView: CardsinViewTwo } = useInView({});
+  gsap.registerPlugin(ScrollTrigger);
+  useEffect(() => {
+    let sections = gsap.utils.toArray(".text");
 
-  useLayoutEffect(() => {
-    gsap.fromTo(
-      ".about2",
-      {
-        opacity: 0,
-        duration: 2,
-        y: 300,
-        scale: 0.5,
-        ease: "power4.out",
-        stagger: {
-          amount: 0.3,
-        },
+    let scrollTween = gsap.to(sections, {
+      xPercent: -100 * (sections.length - 1),
+      startAt: { xPercent: 0 },
+      ease: "ease",
+      scrollTrigger: {
+        trigger: ".text",
+        start: "top top",
+
+        scrub: true,
+        markers: false,
       },
-      {
-        opacity: 1,
-        duration: 5,
-        y: 300,
-        ease: "power4.out",
-        scale: 2,
-        stagger: {
-          amount: 0.3,
-        },
-      }
-    );
-  }, [CardsinViewTwo]);
+    });
+  }, []);
 
   return (
-    <div className={styles.body}>
-      <div className={styles.about}>
-        <div className="about2" ref={cardsReftwo}>
-          Welcome
-        </div>
-      </div>
+    <div className={styles.bodypage}>
+      <div className="text">hello</div>
     </div>
   );
 }

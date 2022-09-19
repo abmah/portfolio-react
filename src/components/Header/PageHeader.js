@@ -12,8 +12,16 @@ export default function PageHeader() {
   }
   const [LightMode, setLightMode] = useState(false);
   function LightDarkMode() {
+    let root = document.querySelector(":root");
+
+    if (LightMode) {
+      root.style.setProperty("--text-color", "white");
+      root.style.setProperty("--pink", "black");
+    } else {
+      root.style.setProperty("--pink", "#ffe");
+      root.style.setProperty("--text-color", "#006869");
+    }
     setLightMode(!LightMode);
-    console.log(LightMode);
   }
 
   return (

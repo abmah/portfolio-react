@@ -17,8 +17,8 @@
 
 .contactHeader {
   color: var(--text-color);
-  font-size: var(--step-3);
-
+  font-size: var(--step-4);
+  font-family: lato;
   font-weight: 100;
 
   margin-bottom: 2em;

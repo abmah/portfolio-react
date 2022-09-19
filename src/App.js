@@ -1,4 +1,3 @@
-import "./App.css";
 import PageHeader from "./components/Header/PageHeader";
 import Body from "./components/Body/BodyPage";
 import Cursor from "./components/Cursor/Cursor";
@@ -12,7 +11,6 @@ function App() {
       <Cursor />
 
       <PageHeader />
-      {/* <Body /> */}
       <Test />
       <SkillSet />
       <Projects />
@@ -22,3 +20,7 @@ function App() {
 }
 
 export default App;
+
+{
+  /* <Body /> */
+}
