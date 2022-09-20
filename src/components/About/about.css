@@ -23,6 +23,7 @@
   background-position-x: 12px;
   display: inline-block;
   color: var(--text-color);
+  transition: all 0.2s ease-in-out;
 }
 .about-first:hover {
   transform: translateY(-10px);

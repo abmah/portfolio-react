@@ -6,7 +6,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
   /* background: linear-gradient(90deg, #4c3a69 75%, #001854 25%); */
-  cursor: none;
+  /* cursor: none; */
   color: #ff95a7;
   background-color: var(--background-color);
   position: relative;
@@ -17,7 +17,7 @@ a {
   text-decoration: none;
 }
 
-@media screen and (min-width: 608px) {
+/* @media screen and (min-width: 608px) {
   a {
     cursor: none;
   }
@@ -30,9 +30,9 @@ a {
   button {
     cursor: none;
   }
-}
+} */
 
-@media screen and (max-width: 608px) {
+/* @media screen and (max-width: 608px) {
   body,
   html {
     cursor: default;
@@ -42,7 +42,7 @@ a {
 * {
   box-sizing: border-box;
   transition: 0.2;
-}
+} */
 
 /* @media (prefers-color-scheme: dark) {
   html {

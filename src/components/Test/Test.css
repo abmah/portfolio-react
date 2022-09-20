@@ -87,3 +87,9 @@
 .introduction {
   font-size: var(--step-7);
 }
+
+/* @media screen and (max-width: 638px) {
+  .scroll {
+    display: none;
+  }
+} */
