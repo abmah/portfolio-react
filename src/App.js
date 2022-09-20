@@ -5,6 +5,7 @@ import Test from "./components/Test/TestPage";
 import SkillSet from "./components/Cards/SkillSet";
 import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/ContactPage";
+import About from "./components/About/About";
 function App() {
   return (
     <div className="App">
@@ -12,6 +13,7 @@ function App() {
 
       <PageHeader />
       <Test />
+      <About />
       <SkillSet />
       <Projects />
       <Contact />

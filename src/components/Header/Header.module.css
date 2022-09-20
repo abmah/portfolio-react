@@ -24,7 +24,7 @@
 }
 
 .HeaderName {
-  animation: fadein 4s ease;
+  animation: fadein 1s ease;
   transition: all 0.2s cubic-bezier(0.1, 0.05, 0.62, 1.3);
   color: var(--font-pink);
 }
@@ -146,7 +146,7 @@
   background-clip: text;
   color: transparent;
   animation: bounce 1s infinite;
-
+  animation-play-state: paused;
   user-select: none;
 }
 .dot:hover {

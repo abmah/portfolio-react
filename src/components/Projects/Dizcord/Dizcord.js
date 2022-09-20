@@ -22,34 +22,6 @@ export default function Dizcord() {
   return (
     <div className={styles.Project}>
       <div className={styles.imagesContainer}>
-        <div ref={titleRef} className={titleInView ? styles.show : styles.hide}>
-          <h1>Dizcord</h1>
-        </div>
-        <div ref={linksRef} className={linksInView ? styles.show : styles.hide}>
-          <div className={styles.Dizcordlinks}>
-            <a
-              href="https://dizcorddds.herokuapp.com/"
-              className={styles.dizcordlink}
-            >
-              live-demo
-            </a>
-            <a
-              href="https://github.com/abmah/dizcord"
-              className={styles.dizcordlink}
-            >
-              code <DiGithubBadge className={styles.githubLogo} />
-            </a>
-          </div>
-        </div>
-        <div
-          ref={descriptionRef}
-          className={descriptionInView ? styles.show : styles.hide}
-        >
-          <p className={styles.DizcordParagraph}>
-            Dizcord is a full-stack web chatting program that lets users read
-            other peoples messages as they type.
-          </p>
-        </div>
         <div ref={imageRef} className={imageInView ? styles.show : styles.hide}>
           <Tilt
             options={{ transition: false, reset: false }}
@@ -62,16 +34,54 @@ export default function Dizcord() {
             </div>
           </Tilt>
         </div>
+        <div className="textGroup">
+          <div className={styles.linkandtitle}>
+            <div
+              ref={titleRef}
+              className={titleInView ? styles.show : styles.hide}
+            >
+              <h1 className={styles.mainTitle}>Dizcord</h1>
+            </div>
+            <div
+              ref={linksRef}
+              className={linksInView ? styles.show : styles.hide}
+            >
+              <div className={styles.Dizcordlinks}>
+                <a
+                  href="https://dizcorddds.herokuapp.com/"
+                  className={styles.dizcordlink}
+                >
+                  live-demo
+                </a>
+                <a
+                  href="https://github.com/abmah/dizcord"
+                  className={styles.dizcordlink}
+                >
+                  code <DiGithubBadge className={styles.githubLogo} />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            ref={descriptionRef}
+            className={descriptionInView ? styles.show : styles.hide}
+          >
+            <p className={styles.DizcordParagraph}>
+              Dizcord is a full-stack web chatting program that lets users read
+              other peoples messages as they type.
+            </p>
+          </div>
 
-        {/* <img src="https://i.imgur.com/vqOyN2l.gif" /> */}
-        <div
-          ref={secondRef}
-          className={secondInView ? styles.show : styles.hide}
-        >
-          <p className={styles.DizcordParagraph2}>
-            This app has authentication, a fully functional database, and chat
-            rooms.
-          </p>
+          {/* <img src="https://i.imgur.com/vqOyN2l.gif" /> */}
+          <div
+            ref={secondRef}
+            className={secondInView ? styles.show : styles.hide}
+          >
+            <p className={styles.DizcordParagraph2}>
+              This app has authentication, a fully functional database, and chat
+              rooms.
+            </p>
+          </div>
         </div>
       </div>
       {/* <div className={styles.partSection}></div> */}

@@ -67,6 +67,10 @@
   animation-play-state: running;
 }
 
+.mainTitle {
+  text-align: center;
+}
+
 @keyframes jumbing {
   0% {
     transform: translateY(0);
@@ -92,4 +96,57 @@
   opacity: 0;
   transition: all 0.5s ease-in-out;
   transform: translateX(30px);
+}
+.linkandtitle {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 1200px) {
+  .imagesContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .linkandtitle {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-around;
+  }
+
+  .DizcordParagraph {
+    text-align: left;
+  }
+
+  .DizcordParagraph2 {
+    text-align: left;
+  }
+
+  .Dizcordlinks {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .dizcordlink {
+    justify-content: flex-start;
+  }
+  .dizcordImage1 {
+    max-width: 650px;
+    width: 45vw;
+    background-color: transparent;
+    border-radius: 16px;
+  }
+  .mainTitle {
+    text-align: left;
+  }
+  .textGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-self: flex-start;
+  }
 }

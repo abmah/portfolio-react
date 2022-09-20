@@ -11,7 +11,9 @@ export default function Projects() {
         <div className={styles.projectHeader}>personal projects</div>
       </div>
       <Dizcord />
+      <div className={styles.space} />
       <Vscode />
+      <div className={styles.space} />
     </>
   );
 }

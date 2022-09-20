@@ -10,13 +10,13 @@
 
 .container {
   height: 100vh;
-  width: 400%;
+  width: 500%;
   display: flex;
   flex-wrap: nowrap;
 }
 .panel {
-  width: 25%;
-  background-color: var(--pink);
+  width: 20%;
+
   height: 100vh;
 }
 
@@ -48,6 +48,7 @@
 .box2 {
   transition: all 0.5s ease-in-out;
   width: 90%;
+  text-align: right;
 }
 
 .about-text0,
@@ -78,6 +79,9 @@
 
 .space {
   width: 20px;
+}
+.space1 {
+  width: 100px;
 }
 
 .introduction {

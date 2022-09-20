@@ -1,23 +1,21 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import styles from "./Test.module.css";
-import gsap from "gsap";
+import gsap, { Power3 } from "gsap";
 
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import "./Test.css";
 export default function TestPage() {
   gsap.registerPlugin(ScrollTrigger);
-
+  const elementRef = useRef(null);
   useEffect(() => {
     let sections = gsap.utils.toArray(".panel");
 
     let scrollTween = gsap.to(sections, {
-      xPercent: -70 * (sections.length - 1),
+      xPercent: -60 * sections.length,
       startAt: { xPercent: 0 },
-      ease: "ease",
       scrollTrigger: {
         trigger: ".scroll",
         start: "top top",
-
         pin: true,
         scrub: true,
         markers: false,
@@ -27,13 +25,12 @@ export default function TestPage() {
     gsap.to(".box0", {
       duration: 1,
       opacity: 1,
-      y: 0,
+      y: 12,
       x: 30,
       scrollTrigger: {
         containerAnimation: scrollTween,
         trigger: ".box0",
         start: "left center",
-        toggleActions: "play none none reverse",
         markers: false,
         scrub: true,
         toggleClass: "active",
@@ -42,15 +39,13 @@ export default function TestPage() {
     gsap.to(".box1", {
       duration: 1,
       opacity: 1,
-      // make it move to the right
       x: 30,
-
+      y: -12,
       yoyo: true,
       scrollTrigger: {
         containerAnimation: scrollTween,
         trigger: ".box1",
         start: "left center",
-        // toggleActions: "play none none reverse",
         markers: false,
         scrub: true,
 
@@ -61,6 +56,7 @@ export default function TestPage() {
       duration: 4,
       opacity: 1,
       x: 30,
+      y: 12,
       rotate: 50,
       scrollTrigger: {
         containerAnimation: scrollTween,
@@ -83,12 +79,13 @@ export default function TestPage() {
         <div className="space"></div>
         <div className="panel">
           <div className={styles.firstBlock}>
-            <div className="box0">FRONTEND DEVELOPER</div>
+            <div ref={elementRef} className="box0">
+              FRONTEND DEVELOPER
+            </div>
             <div className="about-text0"></div>
           </div>
-        </div>
-        <div className="space"></div>
-
+        </div>{" "}
+        <div className="space1"></div>
         <div className="panel">
           <div className={styles.firstBlock}>
             <div className="box1">BACKEND DEVELOPER</div>

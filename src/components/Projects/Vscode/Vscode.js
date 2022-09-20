@@ -23,36 +23,8 @@ export default function Vscode() {
       {/* <div className={styles.partSection}></div> */}
       <div className={styles.imagesContainer2}>
         <div
-          ref={titleRef}
-          className={titleInView ? styles.show2 : styles.hide2}
-        >
-          <h1>Visual Studio Code Clone</h1>
-        </div>
-        <div
-          ref={linksRef}
-          className={linksInView ? styles.show2 : styles.hide2}
-        >
-          <div className={styles.Dizcordlinks}>
-            <a
-              href="https://github.com/abmah/Visual-Studio-Code-Clone"
-              className={styles.dizcordlink}
-            >
-              code <DiGithubBadge className={styles.githubLogo} />
-            </a>
-          </div>
-        </div>
-        <div
-          ref={descriptionRef}
-          className={descriptionInView ? styles.show2 : styles.hide2}
-        >
-          <p className={styles.DizcordParagraph}>
-            A clone of the Visual Studio Code text editor. A front-end-only app
-            that types a message that the developer has prewritten.
-          </p>
-        </div>
-        <div
           ref={imageRef}
-          className={imageInView ? styles.show2 : styles.hide2}
+          className={imageInView ? styles.show1 : styles.hide1}
         >
           <Tilt
             options={{ transition: false, reset: false }}
@@ -66,16 +38,47 @@ export default function Vscode() {
           </Tilt>
         </div>
         {/* <img src="https://i.imgur.com/vqOyN2l.gif" /> */}
-        <div
-          ref={secondRef}
-          className={secondInView ? styles.show2 : styles.hide2}
-        >
-          <p className={styles.DizcordParagraph2}>
-            this app is meant to be used as a portfolio
-          </p>
+        <div className={styles.textGroup}>
+          <div className={styles.linkandtitle}>
+            <div
+              ref={titleRef}
+              className={titleInView ? styles.show2 : styles.hide2}
+            >
+              <h1 className={styles.mainTitle}>Visual Studio Code Clone</h1>
+            </div>
+            <div
+              ref={linksRef}
+              className={linksInView ? styles.show2 : styles.hide2}
+            >
+              <div className={styles.Dizcordlinks}>
+                <a
+                  href="https://github.com/abmah/Visual-Studio-Code-Clone"
+                  className={styles.dizcordlink}
+                >
+                  code <DiGithubBadge className={styles.githubLogo} />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            ref={descriptionRef}
+            className={descriptionInView ? styles.show2 : styles.hide2}
+          >
+            <p className={styles.DizcordParagraph}>
+              A clone of the Visual Studio Code text editor. A front-end-only
+              app that types a message that the developer has prewritten.
+            </p>
+          </div>
+          <div
+            ref={secondRef}
+            className={secondInView ? styles.show2 : styles.hide2}
+          >
+            <p className={styles.DizcordParagraph2}>
+              this app is meant to be used as a portfolio
+            </p>
+          </div>
         </div>
       </div>
-      {/* <div className={styles.partSection}></div> */}
     </div>
   );
 }
