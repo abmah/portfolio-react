@@ -32,7 +32,7 @@ export default function About() {
             to make <span className="text2">pretty</span> looking{" "}
           </div>{" "}
           <div ref={textRef3} className={`${inView3 ? "show" : "hide"}`}>
-            websites using <span className="text1">pretty</span>{" "}
+            things using <span className="text1">pretty</span>{" "}
           </div>
           <div ref={textRef4} className={`${inView4 ? "show" : "hide"}`}>
             looking code{" "}

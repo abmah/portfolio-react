@@ -81,10 +81,11 @@ export default function Cursor() {
       </div> */}
 
       <AnimatedCursor
-        innerSize={20}
+        innerSize={30}
         outerSize={0}
         outerAlpha={0.7}
-        innerScale={0.4}
+        innerScale={0.7}
+        OuterStyle={{ backgroundColor: "pink" }}
         outerStyle={{
           backgroundColor: "pink",
         }}
