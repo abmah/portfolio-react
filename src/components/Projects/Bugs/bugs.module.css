@@ -1,0 +1,152 @@
+.Project {
+  overflow: hidden;
+  font-family: monospace;
+  background-color: var(--pink);
+}
+
+.imagesContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dizcordImage1 {
+  max-width: 700px;
+  width: 95vw;
+  border-radius: 16px;
+}
+
+.dizcordImage1:hover .dizcordButton1 {
+  display: block;
+  margin-right: 20px;
+}
+
+.dizcordButton1 {
+  position: absolute;
+  right: 90px;
+  bottom: 30px;
+  display: none;
+  margin-right: 300px;
+  font-size: large;
+}
+
+.dizcordButton1:hover {
+  text-decoration: underline;
+}
+.DizcordParagraph {
+  font-size: var(--step--1);
+  text-align: center;
+  max-width: 600px;
+}
+.DizcordParagraph2 {
+  font-size: var(--step--2);
+  text-align: center;
+  max-width: 600px;
+}
+
+.Dizcordlinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  font-size: var(--step-0);
+  color: var(--font-pink);
+  text-align: center;
+}
+.dizcordlink:hover {
+  text-decoration: underline;
+}
+
+.githubLogo {
+  animation: jumbing 0.4s infinite ease-in-out;
+  animation-play-state: paused;
+}
+.dizcordlink:hover .githubLogo {
+  animation-play-state: running;
+}
+
+.mainTitle {
+  text-align: center;
+}
+
+@keyframes jumbing {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.partSection {
+  background-color: var(--font-pink);
+  height: 10px;
+}
+.show {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  transform: translateX(0);
+}
+
+.hide {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  transform: translateX(30px);
+}
+.linkandtitle {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 1200px) {
+  .imagesContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .linkandtitle {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-around;
+  }
+
+  .DizcordParagraph {
+    text-align: left;
+  }
+
+  .DizcordParagraph2 {
+    text-align: left;
+  }
+
+  .Dizcordlinks {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .dizcordlink {
+    justify-content: flex-start;
+  }
+  .dizcordImage1 {
+    max-width: 650px;
+    width: 45vw;
+    background-color: transparent;
+    border-radius: 16px;
+  }
+  .mainTitle {
+    text-align: left;
+  }
+  .textGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-self: flex-start;
+  }
+}

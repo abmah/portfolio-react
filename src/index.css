@@ -146,8 +146,8 @@ html {
 }
 
 :root {
-  --text-color: #006869;
-  --pink: #ffe;
+  --text-color: white;
+  --pink: black;
   --color-pink: pink;
   --color-white: white;
   --font-pink: #ff95a7;

@@ -10,7 +10,7 @@ export default function PageHeader() {
       behavior: "smooth",
     });
   }
-  const [LightMode, setLightMode] = useState(true);
+  const [LightMode, setLightMode] = useState(false);
   function LightDarkMode() {
     let root = document.querySelector(":root");
 

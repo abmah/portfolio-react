@@ -18,11 +18,11 @@ export default function About() {
           >
             about
           </div>
-          <div className="long-info">
+          {/* <div className="long-info">
             I've always loved to create, and when I started programming, I fell
             in love. I like the feeling of having an idea and being able to see
             it turn into reality, and code made that possible.
-          </div>
+          </div> */}
         </div>
         <div className="about-paragraph">
           <div ref={textRef1} className={` ${inView1 ? "show" : "hide"}`}>
