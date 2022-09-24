@@ -40,7 +40,7 @@ export default function Dizcord() {
               ref={titleRef}
               className={titleInView ? styles.show : styles.hide}
             >
-              <h1 className={styles.mainTitle}>Bugs*in progress</h1>
+              <h1 className={styles.mainTitle}>Bugs *in progress</h1>
             </div>
             <div
               ref={linksRef}
