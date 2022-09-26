@@ -81,19 +81,20 @@ export default function Cursor() {
       </div> */}
 
       <AnimatedCursor
-        innerSize={30}
-        outerSize={0}
+        innerSize={0}
+        outerSize={30}
         outerAlpha={0.7}
         innerScale={0.7}
-        OuterStyle={{ backgroundColor: "pink" }}
         outerStyle={{
-          backgroundColor: "pink",
+          backgroundColor: "var(--text-color)",
+          transform: "translateX(-25px)",
+          mixBlendMode: "difference",
         }}
         innerStyle={{
           backgroundColor: "white",
           mixBlendMode: "difference",
         }}
-        outerScale={5}
+        outerScale={2}
         clickables={[
           "a",
           'input[type="text"]',
@@ -106,6 +107,8 @@ export default function Cursor() {
           "textarea",
           "button",
           ".link",
+          ".clickable-header-item",
+          ".dot",
         ]}
       />
     </>

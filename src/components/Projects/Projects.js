@@ -6,7 +6,7 @@ import { useRef } from "react";
 import { useInView } from "react-intersection-observer";
 import Bugs from "./Bugs/Bugs";
 export default function Projects({ forwardRef }) {
-  const { ref, inView } = useInView();
+  const { ref, inView } = useInView({});
 
   return (
     <>

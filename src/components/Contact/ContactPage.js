@@ -52,8 +52,12 @@ export default function Contact({ forwardRef }) {
       );
   };
 
-  const { ref: titleRef, inView: titleInView } = useInView({ delay: 50 });
-  const { ref: linksRef, inView: linksInView } = useInView({ delay: 100 });
+  const { ref: titleRef, inView: titleInView } = useInView({
+    delay: 50,
+  });
+  const { ref: linksRef, inView: linksInView } = useInView({
+    delay: 100,
+  });
   const { ref: formRef, inView: fromInView } = useInView({
     delay: 50,
   });

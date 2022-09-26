@@ -11,29 +11,25 @@ export default function Dizcord() {
     height: "fit-content",
   };
 
-  const { ref: titleRef, inView: titleInView } = useInView({ delay: 50 });
-  const { ref: linksRef, inView: linksInView } = useInView({ delay: 100 });
+  const { ref: titleRef, inView: titleInView } = useInView({
+    delay: 50,
+  });
+  const { ref: linksRef, inView: linksInView } = useInView({
+    delay: 100,
+  });
   const { ref: descriptionRef, inView: descriptionInView } = useInView({
     delay: 50,
   });
-  const { ref: imageRef, inView: imageInView } = useInView({ delay: 100 });
-  const { ref: secondRef, inView: secondInView } = useInView({ delay: 50 });
+  const { ref: imageRef, inView: imageInView } = useInView({
+    delay: 100,
+  });
+  const { ref: secondRef, inView: secondInView } = useInView({
+    delay: 50,
+  });
 
   return (
     <div className={styles.Project}>
       <div className={styles.imagesContainer}>
-        <div ref={imageRef} className={imageInView ? styles.show : styles.hide}>
-          <Tilt
-            options={{ transition: false, reset: false }}
-            style={picStyles}
-            className={styles.dizcordImage1}
-          >
-            <div>
-              <img className={styles.dizcordImage1} src={Bugs} />
-              <div className={styles.dizcordButton1}>!!</div>
-            </div>
-          </Tilt>
-        </div>
         <div className="textGroup">
           <div className={styles.linkandtitle}>
             <div
@@ -83,6 +79,18 @@ export default function Dizcord() {
               This project was built using React, Redux, and React-Router.
             </p>
           </div>
+        </div>
+        <div ref={imageRef} className={imageInView ? styles.show : styles.hide}>
+          <Tilt
+            options={{ transition: false, reset: false }}
+            style={picStyles}
+            className={styles.dizcordImage1}
+          >
+            <div>
+              <img className={styles.dizcordImage1} src={Bugs} />
+              <div className={styles.dizcordButton1}>!!</div>
+            </div>
+          </Tilt>
         </div>
       </div>
       {/* <div className={styles.partSection}></div> */}

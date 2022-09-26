@@ -146,11 +146,12 @@
   background-clip: text;
   color: transparent;
   animation: bounce 1s infinite;
-  animation-play-state: paused;
+
   user-select: none;
 }
 .dot:hover {
   animation-play-state: running;
+  animation-duration: 0.6s;
   font-weight: 900;
 }
 .dot:active {

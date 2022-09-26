@@ -11,13 +11,21 @@ export default function Dizcord() {
     height: "fit-content",
   };
 
-  const { ref: titleRef, inView: titleInView } = useInView({ delay: 50 });
-  const { ref: linksRef, inView: linksInView } = useInView({ delay: 100 });
+  const { ref: titleRef, inView: titleInView } = useInView({
+    delay: 50,
+  });
+  const { ref: linksRef, inView: linksInView } = useInView({
+    delay: 100,
+  });
   const { ref: descriptionRef, inView: descriptionInView } = useInView({
     delay: 50,
   });
-  const { ref: imageRef, inView: imageInView } = useInView({ delay: 100 });
-  const { ref: secondRef, inView: secondInView } = useInView({ delay: 50 });
+  const { ref: imageRef, inView: imageInView } = useInView({
+    delay: 100,
+  });
+  const { ref: secondRef, inView: secondInView } = useInView({
+    delay: 50,
+  });
 
   return (
     <div className={styles.Project}>

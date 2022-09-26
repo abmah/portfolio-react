@@ -43,7 +43,7 @@ export default function PageHeader({ projectScrollRef, contactScrollRef }) {
             onClick={LightDarkMode}
             className={`${styles.HeaderName} ${styles.dot}`}
           >
-            .
+            <span className="clickable-header-item"> .</span>
           </span>
         </div>
         {/* <div className={styles.HeaderTitle}>full-stack developer</div> */}
@@ -54,8 +54,18 @@ export default function PageHeader({ projectScrollRef, contactScrollRef }) {
         }
       >
         <ul className={styles.MenuList}>
-          <li onClick={() => scrollToProjects(1)}>projects</li>
-          <li onClick={() => scrollToProjects(2)}>contact</li>
+          <li
+            className="clickable-header-item"
+            onClick={() => scrollToProjects(1)}
+          >
+            projects
+          </li>
+          <li
+            className="clickable-header-item"
+            onClick={() => scrollToProjects(2)}
+          >
+            contact
+          </li>
         </ul>
       </div>
     </div>

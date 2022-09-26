@@ -11,13 +11,21 @@ export default function Vscode() {
     height: "fit-content",
   };
 
-  const { ref: titleRef, inView: titleInView } = useInView({ delay: 50 });
-  const { ref: linksRef, inView: linksInView } = useInView({ delay: 100 });
+  const { ref: titleRef, inView: titleInView } = useInView({
+    delay: 50,
+  });
+  const { ref: linksRef, inView: linksInView } = useInView({
+    delay: 100,
+  });
   const { ref: descriptionRef, inView: descriptionInView } = useInView({
     delay: 50,
   });
-  const { ref: imageRef, inView: imageInView } = useInView({ delay: 100 });
-  const { ref: secondRef, inView: secondInView } = useInView({ delay: 50 });
+  const { ref: imageRef, inView: imageInView } = useInView({
+    delay: 100,
+  });
+  const { ref: secondRef, inView: secondInView } = useInView({
+    delay: 50,
+  });
   return (
     <div className={styles.Project}>
       {/* <div className={styles.partSection}></div> */}
@@ -51,6 +59,12 @@ export default function Vscode() {
               className={linksInView ? styles.show2 : styles.hide2}
             >
               <div className={styles.Dizcordlinks}>
+                <a
+                  href="https://vscode-clone-eight.vercel.app/"
+                  className={styles.dizcordlink}
+                >
+                  live-demo
+                </a>
                 <a
                   href="https://github.com/abmah/Visual-Studio-Code-Clone"
                   className={styles.dizcordlink}
