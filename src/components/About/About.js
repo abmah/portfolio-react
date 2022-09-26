@@ -18,15 +18,13 @@ export default function About() {
           >
             about
           </div>
-          {/* <div className="long-info">
-            I've always loved to create, and when I started programming, I fell
-            in love. I like the feeling of having an idea and being able to see
-            it turn into reality, and code made that possible.
-          </div> */}
+          <div className="long-info">
+            undergrad computer science student based in Jordan
+          </div>
         </div>
         <div className="about-paragraph">
           <div ref={textRef1} className={` ${inView1 ? "show" : "hide"}`}>
-            im a programmer that loves{" "}
+            A programmer that loves{" "}
           </div>
           <div ref={textRef2} className={`${inView2 ? "show" : "hide"}`}>
             to make <span className="text2">pretty</span> looking{" "}
