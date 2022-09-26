@@ -66,7 +66,7 @@ export default function Vscode() {
                   live-demo
                 </a>
                 <a
-                  href="https://github.com/abmah/Visual-Studio-Code-Clone"
+                  href="https://github.com/abmah/vscode-clone"
                   className={styles.dizcordlink}
                 >
                   code <DiGithubBadge className={styles.githubLogo} />
