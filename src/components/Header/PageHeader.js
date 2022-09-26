@@ -1,14 +1,16 @@
 import styles from "./Header.module.css";
 import { useState } from "react";
 
-export default function PageHeader() {
+export default function PageHeader({ projectScrollRef, contactScrollRef }) {
   const [shouldHeaderMinimize, setShouldHeaderMinimize] = useState(false);
 
-  function scrollToProjects(pixles) {
-    window.scrollTo({
-      top: pixles,
-      behavior: "smooth",
-    });
+  function scrollToProjects(number) {
+    if (number === 1) {
+      projectScrollRef.current?.scrollIntoView({ behavior: "smooth" });
+    }
+    if (number === 2) {
+      contactScrollRef.current?.scrollIntoView({ behavior: "smooth" });
+    }
   }
   const [LightMode, setLightMode] = useState(false);
   function LightDarkMode() {
@@ -52,8 +54,8 @@ export default function PageHeader() {
         }
       >
         <ul className={styles.MenuList}>
-          <li onClick={() => scrollToProjects(4110)}>projects</li>
-          <li onClick={() => scrollToProjects(6310)}>contact</li>
+          <li onClick={() => scrollToProjects(1)}>projects</li>
+          <li onClick={() => scrollToProjects(2)}>contact</li>
         </ul>
       </div>
     </div>

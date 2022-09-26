@@ -6,7 +6,7 @@ import { BiMailSend } from "react-icons/bi";
 import styles from "./ContactPage.module.css";
 import emailjs from "emailjs-com";
 import { useInView } from "react-intersection-observer";
-export default function Contact() {
+export default function Contact({ forwardRef }) {
   // const [name, setName] = useState("");
   // const [email, setEmail] = useState("");
   // const [message, setMessage] = useState("");
@@ -126,7 +126,7 @@ export default function Contact() {
 
   return (
     /*@ts-ignore */
-    <div className={styles.contactpage}>
+    <div ref={forwardRef} className={styles.contactpage}>
       <div ref={titleRef} className={titleInView ? styles.show : styles.hide}>
         <div className={styles.contactHeader}>GET IN TOUCH</div>
       </div>
