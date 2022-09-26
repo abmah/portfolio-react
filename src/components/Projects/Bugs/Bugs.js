@@ -76,7 +76,7 @@ export default function Dizcord() {
             className={secondInView ? styles.show : styles.hide}
           >
             <p className={styles.DizcordParagraph2}>
-              This project was built using React, Redux, and React-Router.
+              This project was built using React, Framermotion and React-Router.
             </p>
           </div>
         </div>

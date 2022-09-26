@@ -87,7 +87,8 @@ export default function Dizcord() {
           >
             <p className={styles.DizcordParagraph2}>
               This app has authentication, a fully functional database, and chat
-              rooms.
+              rooms. Built using React, React-router, Node, Express, and
+              Socket.io
             </p>
           </div>
         </div>

@@ -88,7 +88,7 @@ export default function Vscode() {
             className={secondInView ? styles.show2 : styles.hide2}
           >
             <p className={styles.DizcordParagraph2}>
-              this app is meant to be used as a portfolio
+              This app is meant to be used as a portfolio. Built with React.
             </p>
           </div>
         </div>
