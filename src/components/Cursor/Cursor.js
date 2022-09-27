@@ -93,7 +93,7 @@ export default function Cursor() {
         innerStyle={{
           backgroundColor: "transparent",
           mixBlendMode: "difference",
-          border: "1px solid white",
+          border: "1px solid rgba(255, 255, 255, 0.8)",
         }}
         outerScale={2}
         clickables={[
