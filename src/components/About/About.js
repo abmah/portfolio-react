@@ -24,7 +24,7 @@ export default function About() {
         </div>
         <div className="about-paragraph">
           <div ref={textRef1} className={` ${inView1 ? "show" : "hide"}`}>
-            A programmer that loves{" "}
+            programmer that loves{" "}
           </div>
           <div ref={textRef2} className={`${inView2 ? "show" : "hide"}`}>
             to make <span className="text2">pretty</span> looking{" "}

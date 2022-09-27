@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import styles from "./SkillSet.module.css";
 import { AiOutlineHtml5 } from "react-icons/ai";
 import { SiTailwindcss } from "react-icons/si";
