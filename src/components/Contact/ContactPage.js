@@ -138,19 +138,24 @@ export default function Contact({ forwardRef }) {
         <div ref={linksRef} className={linksInView ? styles.show : styles.hide}>
           <div className={styles.socialsGroup}>
             <div className={styles.socialsGroup}>
-              <a href="mailto: 1234@example.com">
+              <a target="_blank" href="mailto: 1234@example.com">
                 <div className={styles.emailSend}>ab.mahasnh@gmail.com</div>
               </a>
             </div>
           </div>
           <div className={styles.socialsGroup}>
-            <a href="https://www.linkedin.com/in/ab-mahasnh-23672323a/">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/ab-mahasnh-23672323a/"
+            >
               LinkedIn
             </a>
             <SiLinkedin className={styles.LinkedinLogo} />
           </div>
           <div className={styles.socialsGroup}>
-            <a href="https://github.com/abmah">Github</a>
+            <a target="_blank" href="https://github.com/abmah">
+              Github
+            </a>
             <DiGithubAlt className={styles.LinkedinLogo} />
           </div>
         </div>

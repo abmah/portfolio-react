@@ -60,12 +60,14 @@ export default function Vscode() {
             >
               <div className={styles.Dizcordlinks}>
                 <a
+                  target="_blank"
                   href="https://vscode-clone-eight.vercel.app/"
                   className={styles.dizcordlink}
                 >
                   live-demo
                 </a>
                 <a
+                  target="_blank"
                   href="https://github.com/abmah/vscode-clone"
                   className={styles.dizcordlink}
                 >

@@ -44,6 +44,7 @@ export default function Dizcord() {
             >
               <div className={styles.Dizcordlinks}>
                 <a
+                  target="_blank"
                   href="https://bugs-omega.vercel.app/
 "
                   className={styles.dizcordlink}
@@ -51,6 +52,7 @@ export default function Dizcord() {
                   live-demo
                 </a>
                 <a
+                  target="_blank"
                   href="https://github.com/abmah/Bugs"
                   className={styles.dizcordlink}
                 >
