@@ -67,6 +67,18 @@ export default function Dizcord() {
                 >
                   code <DiGithubBadge className={styles.githubLogo} />
                 </a>
+                <a
+                  href="https://dizcord-client-2.vercel.app/"
+                  className={styles.dizcordlink}
+                >
+                  Frontend only version
+                </a>
+                <a
+                  href="https://youtu.be/Cs6K4BbVSu0"
+                  className={styles.dizcordlink}
+                >
+                  video preview
+                </a>
               </div>
             </div>
           </div>
@@ -74,6 +86,10 @@ export default function Dizcord() {
             ref={descriptionRef}
             className={descriptionInView ? styles.show : styles.hide}
           >
+            <div className={styles.DizcordParagraph2}>
+              this app is hosted on heroku and the free teir is going away so if
+              its not working then thats why.
+            </div>
             <p className={styles.DizcordParagraph}>
               Dizcord is a full-stack web chatting program that lets users read
               other peoples messages as they type.
