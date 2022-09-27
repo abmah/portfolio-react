@@ -81,7 +81,7 @@ export default function Cursor() {
       </div> */}
 
       <AnimatedCursor
-        innerSize={80}
+        innerSize={40}
         outerSize={30}
         outerAlpha={0.7}
         innerScale={0.7}
