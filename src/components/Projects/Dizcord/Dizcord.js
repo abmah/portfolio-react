@@ -56,24 +56,28 @@ export default function Dizcord() {
             >
               <div className={styles.Dizcordlinks}>
                 <a
+                  target="_blank"
                   href="https://dizcorddds.herokuapp.com/"
                   className={styles.dizcordlink}
                 >
                   live-demo
                 </a>
                 <a
+                  target="_blank"
                   href="https://github.com/abmah/dizcord"
                   className={styles.dizcordlink}
                 >
                   code <DiGithubBadge className={styles.githubLogo} />
                 </a>
                 <a
+                  target="_blank"
                   href="https://dizcord-client-2.vercel.app/"
                   className={styles.dizcordlink}
                 >
                   Frontend only version
                 </a>
                 <a
+                  target="_blank"
                   href="https://youtu.be/Cs6K4BbVSu0"
                   className={styles.dizcordlink}
                 >

@@ -81,7 +81,7 @@ export default function Cursor() {
       </div> */}
 
       <AnimatedCursor
-        innerSize={0}
+        innerSize={80}
         outerSize={30}
         outerAlpha={0.7}
         innerScale={0.7}
@@ -91,8 +91,9 @@ export default function Cursor() {
           mixBlendMode: "difference",
         }}
         innerStyle={{
-          backgroundColor: "white",
+          backgroundColor: "transparent",
           mixBlendMode: "difference",
+          border: "1px solid white",
         }}
         outerScale={2}
         clickables={[
