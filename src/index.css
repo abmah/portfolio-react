@@ -147,7 +147,7 @@ html {
 
 :root {
   --text-color: white;
-  --pink: black;
+  --pink: rgb(23, 26, 27);
   --color-pink: pink;
   --color-white: white;
   --font-pink: #ff95a7;

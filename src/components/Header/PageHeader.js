@@ -18,7 +18,7 @@ export default function PageHeader({ projectScrollRef, contactScrollRef }) {
 
     if (LightMode) {
       root.style.setProperty("--text-color", "white");
-      root.style.setProperty("--pink", "black");
+      root.style.setProperty("--pink", "rgb(23, 26, 27)");
     } else {
       root.style.setProperty("--pink", "#ffe");
       root.style.setProperty("--text-color", "#006869");
