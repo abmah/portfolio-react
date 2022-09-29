@@ -7,6 +7,7 @@ import Contact from "./components/Contact/ContactPage";
 import About from "./components/About/About";
 import React, { useRef } from "react";
 import { useEffect } from "react";
+import Footer from "./components/Footer/Footer";
 function App() {
   const ProjectRef = useRef(null);
   const ContactRef = useRef(null);
@@ -20,6 +21,7 @@ function App() {
       <SkillSet />
       <Projects forwardRef={ProjectRef} />
       <Contact forwardRef={ContactRef} />
+      {/* <Footer /> */}
     </div>
   );
 }
