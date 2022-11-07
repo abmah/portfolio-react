@@ -3,7 +3,7 @@
   font-weight: 900;
   font-family: lato;
   text-transform: uppercase;
-
+  margin-left: 20px;
   background-color: var(--pink);
   color: var(--text-color);
   height: 10vh;
